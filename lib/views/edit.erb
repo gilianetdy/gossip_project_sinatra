@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>PAGE EDITION POTINS</title>
+</head>
+<body>
+ <p> modifie ton potin <%= params['id'].to_i  %> </p>
+ <p>
+   <%= "<form action=\"/gossips/#{params['id']}/edit/\" method='POST'>" %>
+     nouvel auteur :  <input type='text' name='gossip_new_author'/><br/>
+     nouveau contenu : <input type='text' name='gossip_new_content'/><br/>
+     <input type='submit'/> 
+   </form>
+
+     
+     <a href="/">Page d'accueil</a> </p> 
+
+
+   </body>
+   </html>
